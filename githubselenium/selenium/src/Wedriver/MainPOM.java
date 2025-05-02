@@ -12,7 +12,8 @@ public class MainPOM {
 		
 		wd.get("https://proposalfinder.com/");
 		Thread.sleep(2000);
-		wd.manage().window().maximize();
+		wd.manage().window().fullscreen();
+		Thread.sleep(1000);
 		
 		POM p = new POM(wd);
 	
